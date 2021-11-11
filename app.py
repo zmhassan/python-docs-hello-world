@@ -7,4 +7,4 @@ def hello():
     """
     Hello function
     """
-    return "Hello, World!"
+    return "Testing, 1 2 3 World!"
