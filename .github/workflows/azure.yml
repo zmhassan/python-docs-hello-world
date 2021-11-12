@@ -40,10 +40,12 @@ jobs:
       run: |
         # Build and test the project, then
         # deploy to Azure Web App.
-        yarn --cwd ui install
-        yarn --cwd ui build
-        pip install -r flask-server/requirements.txt
-        pytest flask-server
+        cd ui
+        yarn install
+        yarn  build
+        cd ../flask-server
+        pip install -r requirements.txt
+        pytest 
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
