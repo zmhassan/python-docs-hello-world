@@ -13,7 +13,7 @@ class Panel extends Component {
                     <p class="card-text">
                         <Tables />
                     </p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                    <a href="/#view-details?id=1223" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         );
