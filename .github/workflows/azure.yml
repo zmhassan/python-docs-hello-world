@@ -36,13 +36,13 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ env.PYTHON_VERSION }}
-    - name: npm install, build, and test
+    - name: python install, build, and test
       run: |
         # Build and test the project, then
         # deploy to Azure Web App.
-        yarn --cwd ../ui build
-        pip install -r requirements.txt
-        pytest
+        yarn --cwd ui build
+        pip install -r flask-server/requirements.txt
+        pytest flask-server
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
