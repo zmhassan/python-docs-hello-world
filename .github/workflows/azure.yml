@@ -39,13 +39,12 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '14'
-        working-directory: 'ui'
     - run: |
         # Build and test the project, then
         # deploy to Azure Web App.
-        yarn install
-        yarn  build
-      working-directory: 'ui'
+        npm install -g yarn
+        yarn --cwd ui install
+        yarn --cwd ui build
     - name: python install, build, and test
       run: |
         # Build and test the project, then
