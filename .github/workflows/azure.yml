@@ -40,15 +40,18 @@ jobs:
       with:
         node-version: '14'
         cache: 'npm'
-    - run: npm install --global yarn
+        working-directory: 'ui'
+      run: |
+        # Build and test the project, then
+        # deploy to Azure Web App.
+        yarn install
+        yarn  build
+    
+      working-directory: 'ui'
     - name: python install, build, and test
       run: |
         # Build and test the project, then
         # deploy to Azure Web App.
-        cd ui
-        yarn install
-        yarn  build
-        cd ..
         pip install -r requirements.txt
         pytest 
     - name: 'Deploy to Azure WebApp'
