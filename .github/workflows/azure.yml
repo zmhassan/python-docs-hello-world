@@ -43,8 +43,6 @@ jobs:
         # Build and test the project, then
         # deploy to Azure Web App.
         npm install -g yarn 
-        npm i bootstrap-icons
-        npm install --save typescript @types/node @types/react @types/react-dom @types/jest
         yarn install
         npm run build 
       working-directory: ui
