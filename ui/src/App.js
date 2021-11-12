@@ -12,9 +12,9 @@ function App() {
               <div class="inner">
                 <h3 class="masthead-brand">Cover</h3>
                 <nav class="nav nav-masthead justify-content-center">
-                  <a class="nav-link active" >  <i class="bi bi-house"></i> Home</a>
-                  <a class="nav-link" ><i class="bi bi-box"></i> Jobs</a>
-                  <a class="nav-link" > <i class="bi bi-send-x"></i>
+                  <a class="nav-link active" href="/#">  <i class="bi bi-house"></i> Home</a>
+                  <a class="nav-link" href="/#"><i class="bi bi-box"></i> Jobs</a>
+                  <a class="nav-link" href="/#"> <i class="bi bi-send-x"></i>
       Contact</a>
                 </nav>
               </div>
