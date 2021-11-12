@@ -38,10 +38,10 @@ jobs:
         python-version: ${{ env.PYTHON_VERSION }}
     - uses: borales/actions-yarn@v2.3.0
       with:
-        cmd: --cwd install 
+        cmd: --cwd ui install 
     - uses: borales/actions-yarn@v2.3.0
       with:
-        cmd: --cwd build 
+        cmd: --cwd ui build 
     - name: python install, build, and test
       run: |
         # Build and test the project, then
