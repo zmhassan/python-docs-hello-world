@@ -42,7 +42,8 @@ jobs:
     - run: |
         # Build and test the project, then
         # deploy to Azure Web App.
-        npm install 
+        npm install -g yarn 
+        yarn install
         npm run build 
       working-directory: ui
     - name: python install, build, and test
