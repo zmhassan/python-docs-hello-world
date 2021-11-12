@@ -43,8 +43,10 @@ jobs:
         # Build and test the project, then
         # deploy to Azure Web App.
         npm install -g yarn
-        yarn --cwd ui install
-        yarn --cwd ui build
+        npm install 
+        yarn  install
+        yarn  build
+      working-directory: ui
     - name: python install, build, and test
       run: |
         # Build and test the project, then
