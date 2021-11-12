@@ -22,7 +22,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: zaktestweb   # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: 'flask-server'      # set this to the path to your web app project, defaults to the repository root
   PYTHON_VERSION: '3.7'             # set this to the python version to use
 
 jobs:
@@ -40,6 +40,7 @@ jobs:
       run: |
         # Build and test the project, then
         # deploy to Azure Web App.
+        yarn --cwd ../ui build
         pip install -r requirements.txt
         pytest
     - name: 'Deploy to Azure WebApp'
