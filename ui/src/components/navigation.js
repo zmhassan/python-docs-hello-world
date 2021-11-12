@@ -1,25 +1,46 @@
-
 import React, { Component } from 'react';
 
-class navigation extends Component {
+class Navigation extends Component {
     render() {
         return (
-            <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-                    <header class="masthead mb-auto">
-                                <div class="inner">
-                                        <h3 class="masthead-brand">MetaCloud</h3>
-                                        <nav class="nav nav-masthead justify-content-center">
-                                        <a class="nav-link active" href="/#home">  <i class="bi bi-house"></i> Home</a>
-                                        <a class="nav-link" href="/#jobs"><i class="bi bi-box"></i> Jobs</a>
-                                        <a class="nav-link" href="/#contact"> <i class="bi bi-send-x"></i>
-                            Contact</a>
-                                        </nav>
-                                </div>
-                    </header>
-            </div>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Metacloud</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="/#home">  <i class="bi bi-house"></i> Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/#jobs"><i class="bi bi-box"></i> Cron Jobs</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/#jobs"><i class="bi bi-box"></i> Containers</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/#jobs"><i class="bi bi-box"></i> Databases</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/#jobs"><i class="bi bi-box"></i> Virtual Machine</a>
+        </li>
+
+        <li class="nav-item">
+        <a class="nav-link" href="/#contact"> <i class="bi bi-send-x"></i>
+                    Contact Support</a>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
 
         );
     }
 }
 
-export default navigation;
+export default Navigation;
+
